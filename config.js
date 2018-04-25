@@ -15,8 +15,7 @@ To complete the booking process & serve you better though, we will need the foll
 	<li>	email&nbsp; :&nbsp; toMail</li>
 	<li>	Contact name&nbsp; : &nbsp;toContactno</li>
 	<li> 	Address&nbsp; :&nbsp; toAddress</li>
-	<li>	City&nbsp; :&nbsp; toCity</li>
-	<li>	Pincode&nbsp; :&nbsp; toPinCode</li>
+	<li>	City&nbsp; :&nbsp; toCity &nbsp; toPinCode</li>	
   <li>  Nationality</li>
   <li> Complete Passport details</li>
   <li> Proper Insurance Details</li>

@@ -39,6 +39,13 @@ router.post('/dialogflowAPI',function(req, res){
 					if(context.name == 'booknow-followup'){
 						config.mailBody = config.mailBody.replace("toName",context.parameters.name+' '+context.parameters.surname);
 						config.mailBody = config.mailBody.replace("orderId",'A123456');
+						config.mailBody = config.mailBody.replace("toName2",context.parameters.name);
+						config.mailBody = config.mailBody.replace("toSurname",context.parameters.surname);
+						config.mailBody = config.mailBody.replace("toMail",context.parameters.email);
+						config.mailBody = config.mailBody.replace("toContactno",context.parameters.mobile);
+						config.mailBody = config.mailBody.replace("toAddress",'Dno : '+context.parameters.dno+', street line 1 : '+context.parameters.streetLine1 + ', street line 2 : '+context.parameters.streetline2);
+						config.mailBody = config.mailBody.replace("toCity",context.parameters.city);
+						config.mailBody = config.mailBody.replace("toPinCode",context.parameters.pincode);
 						mail.sendMail(context.parameters.email, config.mailBody);		
 					}
 				});				

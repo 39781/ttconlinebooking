@@ -14,7 +14,7 @@ var mailer = {
 			var mailOptions = {
 			  from: 'hexatestmailer@gmail.com',
 			  to: toAddress,
-			  subject: 'booking Id A123456',
+			  subject: 'Booking Id : A123456',
 			  html: mainContent,			 
 			};
 

@@ -37,7 +37,7 @@ router.post('/dialogflowAPI',function(req, res){
 				body.result.contexts.forEach(function(context){
 					
 					if(context.name == 'booknow-followup'){	
-						mailBody = JSON.parse(JSON.stringify(config.mailBody));						
+						mailBody = JSON.parse(JSON.stringify(config)).mailBody;						
 						mailBody = mailBody.replace("toName",context.parameters.name+' '+context.parameters.surname);
 						mailBody = mailBody.replace("orderId",'A123456');
 						mailBody = mailBody.replace("toName2",context.parameters.name);

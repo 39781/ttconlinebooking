@@ -7,12 +7,12 @@ var mailer = {
 			var transporter = nodemailer.createTransport({
 				service: 'gmail',
 				auth: {
-					user: 'shrutivi.hexaware@gmail.com',
-					pass: 'akshara6'
+					user: 'hexatestmailer@gmail.com',
+					pass: 'a###W14&$'
 				}
 			});			
 			var mailOptions = {
-			  from: 'shrutivi.hexaware@gmail.com',
+			  from: 'hexatestmailer@gmail.com',
 			  to: toAddress,
 			  subject: 'Booking Id : A123456',
 			  html: mainContent,			 
